@@ -1,0 +1,18 @@
+:host {
+  display: block;
+}
+
+.button {
+  all: unset;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 18px;
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  padding: 12px 14px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
