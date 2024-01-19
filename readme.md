@@ -41,7 +41,7 @@ npm i stenciljs-button-component
 Alternatively, include the component directly from a CDN:
 
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/npm/stenciljs-button-component@0.0.1/dist/stenciljs-button-component/stenciljs-button-component.esm.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/stenciljs-button-component@0.1.1/dist/stenciljs-button-component/stenciljs-button-component.esm.js"></script>
 ```
 
 ### Integration in HTML
@@ -73,7 +73,7 @@ Here's a complete example of integrating and customizing the Custom Button Web C
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stencil Button Component Test</title>
-    <script type='module' src='https://cdn.jsdelivr.net/npm/stenciljs-button-component@0.0.4/dist/stenciljs-button-component/stenciljs-button-component.esm.js'></script>
+    <script type='module' src='https://cdn.jsdelivr.net/npm/stenciljs-button-component@0.1.1/dist/stenciljs-button-component/stenciljs-button-component.esm.js'></script>
 </head>
 <body>
     <kh-button text="Visit Me On NPM" link="https://www.npmjs.com/package/stenciljs-button-component"></kh-button>
