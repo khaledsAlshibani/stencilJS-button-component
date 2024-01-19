@@ -1,8 +1,8 @@
 import { Component, Host, Prop, h } from '@stencil/core';
 
 @Component({
-	tag: 'kh-button-stencil',
-	styleUrl: 'kh-button-stencil.css',
+	tag: 'kh-button',
+	styleUrl: 'kh-button.css',
 	shadow: true,
 })
 export class KhButtonStencil {

@@ -1,6 +1,6 @@
 {
   "name": "stenciljs-button-component",
-  "version": "0.0.1",
+  "version": "npm deprecate <package-name>@0.0.1",
   "description": "Simple button component using Stencil.js",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",

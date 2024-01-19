@@ -1,18 +1,18 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { KhButtonStencil } from '../kh-button-stencil';
+import { KhButtonStencil } from '../kh-button';
 
-describe('kh-button-stencil', () => {
+describe('kh-button', () => {
   it('renders', async () => {
     const page = await newSpecPage({
       components: [KhButtonStencil],
-      html: `<kh-button-stencil></kh-button-stencil>`,
+      html: `<kh-button></kh-button>`,
     });
     expect(page.root).toEqualHtml(`
-      <kh-button-stencil>
+      <kh-button>
         <mock:shadow-root>
           <slot></slot>
         </mock:shadow-root>
-      </kh-button-stencil>
+      </kh-button>
     `);
   });
 });

@@ -6,7 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface KhButtonStencil {
+    interface KhButton {
         "link": string;
         "text": string;
     }
@@ -26,11 +26,11 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLKhButtonStencilElement extends Components.KhButtonStencil, HTMLStencilElement {
+    interface HTMLKhButtonElement extends Components.KhButton, HTMLStencilElement {
     }
-    var HTMLKhButtonStencilElement: {
-        prototype: HTMLKhButtonStencilElement;
-        new (): HTMLKhButtonStencilElement;
+    var HTMLKhButtonElement: {
+        prototype: HTMLKhButtonElement;
+        new (): HTMLKhButtonElement;
     };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
@@ -39,12 +39,12 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
-        "kh-button-stencil": HTMLKhButtonStencilElement;
+        "kh-button": HTMLKhButtonElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
-    interface KhButtonStencil {
+    interface KhButton {
         "link"?: string;
         "text"?: string;
     }
@@ -63,7 +63,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
-        "kh-button-stencil": KhButtonStencil;
+        "kh-button": KhButton;
         "my-component": MyComponent;
     }
 }
@@ -71,7 +71,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "kh-button-stencil": LocalJSX.KhButtonStencil & JSXBase.HTMLAttributes<HTMLKhButtonStencilElement>;
+            "kh-button": LocalJSX.KhButton & JSXBase.HTMLAttributes<HTMLKhButtonElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
